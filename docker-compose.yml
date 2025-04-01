@@ -13,6 +13,7 @@ services:
       - php
     networks:
       - mynetwork
+
   php:
     build: ./php
     container_name: php
@@ -35,6 +36,8 @@ services:
       MYSQL_DATABASE: my_database
       MYSQL_USER: myUser
       MYSQL_PASSWORD: password
+      MYSQL_INITDB_SKIP_TZINFO: "yes"
+    command: --sql-mode=""  # Vô hiệu hóa STRICT_TRANS_TABLES & ONLY_FULL_GROUP_BY
     volumes:
       - dbdata:/var/lib/mysql
     networks:
