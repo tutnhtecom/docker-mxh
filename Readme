@@ -1,0 +1,3 @@
+Bước 1: remove .git
+Bước 2: Thiết lập file share trên docker: Mở docker -> Setting -> Resources -> File Sharing -> Copy thư mục docker vào Đường dẫn -> Apply $ restart
+Bước 3: Chạy lệnh: docker-compose up --build
