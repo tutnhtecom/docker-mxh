@@ -7,7 +7,7 @@ services:
     ports:
       - "8081:80"
     volumes:
-      - ./mangxahoi:/var/www/html
+      - ./mxhttn_htecom:/var/www/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
       - php
@@ -20,7 +20,7 @@ services:
     ports:
       - "8082:80"
     volumes:
-      - ./mangxahoi:/var/www/html
+      - ./mxhttn_htecom:/var/www/html
       - ./php/php.ini:/usr/local/etc/php/php.ini
     networks:
       - mynetwork
